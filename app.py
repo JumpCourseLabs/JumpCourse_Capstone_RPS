@@ -7,7 +7,7 @@ from utils.game import Game
 app = Flask(__name__)
 game = Game()
 
-app.config['SECRET_KEY'] = 'dattebayo!'
+app.config['SECRET_KEY'] = 'imgonnaacethisinterview'
 
 @app.route('/')
 def home_page():
