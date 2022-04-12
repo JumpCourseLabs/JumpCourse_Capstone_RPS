@@ -1,12 +1,12 @@
 version: '3'
 services:
   web:
-    image: 770399057626.dkr.ecr.us-east-1.amazonaws.com/jenkins-cicd:latest
+    image: 770399057626.dkr.ecr.us-east-1.amazonaws.com/mphelps-jump-capstone:latest
     ports:
       - "5000:5000"
     logging:
       driver: awslogs
       options: 
-        awslogs-group: ec2-tutorial
+        awslogs-group: jump-capstone
         awslogs-region: us-east-1
         awslogs-stream-prefix: web
