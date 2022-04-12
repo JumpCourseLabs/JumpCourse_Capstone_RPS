@@ -1,4 +1,4 @@
-{% extends "index.html" %}
+{% extends "__basic_layout.html" %}
 
 {% block body %}
 <div class="row">
@@ -34,11 +34,11 @@
                     </a>
                 {% else %}
                     {% if player_point > bot_point %}
-                        <div class="win">You Are The Winner!</div>
+                        <div class="winner">You Are The Winner!</div>
                     {% elif player_point < bot_point %}
-                        <div class="win">You Lost The Match</div>
+                        <div class="winner">You Lost The Match</div>
                     {% else %}
-                        <div class="win">A Draw Match!</div>
+                        <div class="winner">A Draw Match!</div>
                     {% endif %}
                     <br>
                     <a class="button rematch btn" href="/rematch">
@@ -80,11 +80,11 @@
                     </div>
                 {% else %}
                     {% if player_point > bot_point %}
-                        <div class="win">You Lost The Match :(</div>
+                        <div class="winner">You Lost The Match :(</div>
                     {% elif player_point < bot_point %}
-                        <div class="win">You Won The Match :) </div>
+                        <div class="winner">You Won The Match :) </div>
                     {% else %}
-                        <div class="win">A Draw Match!</div>
+                        <div class="winner">A Draw Match!</div>
                     {% endif %}
                 {% endif %}
                 </p>

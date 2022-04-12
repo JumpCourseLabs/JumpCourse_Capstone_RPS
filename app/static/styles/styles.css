@@ -55,12 +55,12 @@ body {
   font-size: 70px;
 }
 
-.materialert.lose {
+.materialert.error {
   background-color: #bf616a;
   color: #d8dee9;
 }
 
-.materialert.win {
+.materialert.success {
   background-color: #a3be8c;
   color: #2e3440;
 }
@@ -103,7 +103,7 @@ body {
   right: 5px;
 }
 
-.draw{
+.yellow{
     background-color: #EBCB8B;
     color: #2e3440;
 }
