@@ -1,3 +1,4 @@
+import os
 from flask import Flask , redirect , url_for
 from flask.helpers import flash
 from flask.templating import render_template
@@ -41,4 +42,8 @@ def select(option):
 def rematch():
     game.refresh_content()
     
-    return redirect(url_for('rps_game'))
+    return redirect(url_for('rps_game')) 
+
+if __name__ == "__main__":
+    port = int(os.environ.get('PORT', 5000))
+    app.run(debug=True, host='0.0.0.0', port=port)
